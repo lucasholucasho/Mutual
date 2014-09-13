@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+  <meta name="viewport" content="width=320">
+  <head>
+    <title>Practice</title> 
+  </head>
+
+  <body>
+    <h2>Practice</h2> 
+    {{username}} has signed in.
+    <br>
+    <br>
+    
+
+    {% if connected %}
+        {{msg}}
+        <a href="skype:{{skype}}?call">Place a Skype call to {{skype}}</a>
+    {% else %}
+        {{msg}}
+    {% endif %}
+    <br>
+    <br>
+
+
+    Current time is {{time}} GMT
+    <br>
+    <br>
+
+
+    <form method="post">
+      <input type="Submit" value="Speak and Give Feedback">
+    </form>
+
+  </body>
+</html>

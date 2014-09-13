@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+  <meta name="viewport" content="width=320">
+  <head>
+    <title>Sign In</title>
+    <style type="text/css">
+      .label {text-align: right}
+      .error {color: red}
+    </style>
+
+  </head>
+
+  <body>
+    <h2>Sign In</h2>
+    <form method="post">
+      <table>
+
+        <tr>
+          <td class="label">
+            Email
+          </td>
+          <td>
+            <input type="text" name="email" value="{{email}}">
+          </td>
+        </tr>
+
+
+
+        <tr>
+          <td class="label">
+            Password
+          </td>
+          <td>
+            <input type="password" name="password" value="">
+          </td>
+        </tr>
+
+      </table>
+
+      <div class="error">
+        {{error}}
+      </div>
+
+      <input type="submit" Value="Sign In">
+    </form>
+
+    <br>
+    No Account Yet?
+    <br>
+    <a href="signup">Sign up</a>
+    today.
+
+
+  </body>
+
+</html>
